@@ -38,8 +38,10 @@
         //print_r($_FILES);
         //echo "</pre>";
 
+        date_default_timezone_set("America/New_York");
+        $time = date("Y-m-d H:i:s") . ", ";
+        check_or_make_dir($UPLOAD_LOG_DIR);
         $log_file = fopen($UPLOAD_LOG_FILE, "a");
-        $time = date("h:i:sa") . ": ";
         fwrite($log_file, $time);
         fwrite($log_file, "device: " . $device_id . ", trip: " . $path_prefix . ", filename: " . $_FILES[$UPLOAD_FILE_TAG]['name'] . ", ");
 

@@ -5,6 +5,7 @@ $LARGEST_FILE_SIZE = 1000000000; // 1GB
 $UPLOAD_FILE_TAG = "uploadedFile";
 $UPLOAD_FILE_PREFIX = "filepathPrefix";
 $DEVICE_ID = "deviceID";
+$UPLOAD_LOG_FILE = "log/log.txt";
 
 
 function check_or_make_dir($full_dir) {

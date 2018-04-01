@@ -22,8 +22,9 @@
 
     // echo exec('whoami');
 
-    exit;
+    // exit;
     ?>
+    <a href="EULA.html">End User Licence Agreement</a>
 
 </body>
 </html>
